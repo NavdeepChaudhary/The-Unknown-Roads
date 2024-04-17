@@ -1,3 +1,24 @@
+<html>
+
+<body class="dark-mode">
+    <style>body {
+        background-color: #f0f0f0; /* Light theme background color */
+        color: #333; /* Light theme text color */
+    }
+    
+    body.dark-mode {
+        background-color: #333; /* Dark theme background color */
+        color: #f0f0f0; /* Dark theme text color */
+    }</style>
+</body>
+<button id="dark-mode-button">Dark Mode</button>
+<script>
+const darkModeButton = document.getElementById('dark-mode-button');
+darkModeButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+});
+</script>
+</html>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +26,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Rajasthan Tourism</title>
     
-    <link rel="stylesheet" href="rajasthan.css">
+    <link rel="stylesheet" href="../css/rajasthan.css">
   </head>
   <body>
     
@@ -18,10 +39,11 @@
       <a href="contact">Contact</a>
       <a href ="gallery.html">Gallery</a>
     </nav>
+    <h1>Rajasthan's Treasures: Explore, Discover, Delight!</h1>
     <div class="container">
       <div class="main-content">
-        <div class="card">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ57d6kkkf5sKB8zgvAqK-aSv-Krapc7JzQyZx03uaqWA&s" alt="Jaipur" />
+        <div class="dest">
+          <img src="https://cdn.tripways.com/2020/12/20151017/Hawa-mahal-6.jpg" alt="Jaipur" />
           <div class="card-content">
             <h2>Jaipur - The Pink City</h2>
             <p>
@@ -48,8 +70,8 @@ Located amidst the Aravalli Hills, Galta Ji is a complex of temples and natural 
             </p>
           </div>
         </div>
-        <div class="card">
-          <img src="jaisalmer.jpg" alt="Jaisalmer" />
+        <div class="dest">
+          <img src="https://imgcld.yatra.com/ytimages/image/upload/v1462942314/Jaisalmer_History.jpg" alt="Jaisalmer" />
           <div class="card-content">
             <h2>Jaisalmer - The Golden City</h2>
             <p>
@@ -76,8 +98,8 @@ Dedicated to the Indian Army's contribution during the Indo-Pak wars, the Jaisal
             </p>
           </div>
         </div>
-        <div class="card">
-          <img src="udaipur.jpg" alt="Udaipur" />
+        <div class="dest">
+          <img src="https://framingfootprints.com/wp-content/uploads/2020/10/City_Palace_Udaipur_2-scaled.jpg" alt="Udaipur" />
           <div class="card-content">
             <h2>Udaipur - The City of Lakes</h2>
             <p>
@@ -104,8 +126,8 @@ Located within the premises of the City Palace, the Vintage Car Museum houses a 
             </p>
           </div>
         </div>
-        <div class="card">
-          <img src="pushkar.jpg" alt="Pushkar" />
+        <div class="dest">
+          <img src="https://th.bing.com/th/id/OIP.qVpYIR9EJwcwL5RyB5yq9wAAAA?rs=1&pid=ImgDetMain" alt="Pushkar" />
           <div class="card-content">
             <h2>Pushkar - The Holy City</h2>
             <p>
@@ -132,36 +154,8 @@ Located on the banks of Pushkar Lake, Pap Mochani Temple is dedicated to Goddess
             </p>
           </div>
         </div>
-        <div class="card">
-          <img src="ranthambore.jpg" alt="Ranthambore" />
-          <div class="card-content">
-            <h2>Ranthambore National Park</h2>
-            <p>
-              <h4>1. Ranthambore Fort:</h4>
-              A UNESCO World Heritage Site, Ranthambore Fort is located within the national park. It stands atop a hill and offers panoramic views of the surrounding landscape. The fort dates back to the 10th century and houses ancient temples, palaces, and reservoirs.<br>
-              <h4>2. Padam Talao:</h4>
-              Padam Talao is the largest lake in Ranthambore National Park and is famous for its picturesque beauty. It is a popular spot for wildlife sightings, especially during the dry season when animals gather around the lake to quench their thirst.<br>
-              <h4>3. Rajbagh Talao:</h4>
-              Another prominent lake in the national park, Rajbagh Talao is known for its scenic charm and abundant wildlife. It is an ideal location for birdwatching and photography, with a variety of avian species found in the vicinity.<br>
-              <h4>4. Malik Talao:</h4>
-              Malik Talao is a small lake within Ranthambore National Park known for its tranquil surroundings and diverse birdlife. It provides a serene setting for wildlife enthusiasts and nature lovers to enjoy the beauty of the park.<br>
-              <h4>5. Kachida Valley:</h4>
-              Kachida Valley is a rugged terrain located in the western part of Ranthambore National Park. It is characterized by rocky outcrops, dense vegetation, and seasonal streams. The valley is home to a variety of wildlife including leopards, sloth bears, and deer.<br>
-              <h4>6. Jogi Mahal:</h4>
-              Jogi Mahal is a historic hunting lodge situated near the entrance of Ranthambore National Park. Built in the 18th century, it serves as a popular resting place for visitors and offers breathtaking views of the surrounding wilderness.<br>
-              <h4>7. Bakaula:</h4>
-              Bakaula is a scenic area within Ranthambore National Park known for its dense forests and diverse wildlife. It is an important habitat for tigers and provides excellent opportunities for tiger sightings during safaris.<br>
-              <h4>8. Rajiv Gandhi Regional Museum of Natural History:</h4>
-              Located near the entrance of Ranthambore National Park, this museum showcases the rich biodiversity of the region through interactive exhibits, dioramas, and audio-visual presentations. It provides valuable insights into the flora, fauna, and ecology of Ranthambore.<br>
-              <h4>9. Ranthambore School of Art:</h4>
-              Founded by renowned wildlife artist Shri Ajay Jain, the Ranthambore School of Art is dedicated to promoting wildlife conservation through art. Visitors can explore the gallery and admire the exquisite wildlife paintings and sculptures created by local artists.<br>
-              <h4>10. Surwal Lake:</h4>
-              Surwal Lake is located on the outskirts of Ranthambore National Park and is known for its scenic beauty and rich birdlife. It is a popular destination for birdwatchers and nature enthusiasts, with a variety of migratory and resident bird species found in the area.<br>
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="https://media.istockphoto.com/id/96913441/photo/red-sandtone-palace-in-india.jpg?s=612x612&w=0&k=20&c=9iKzxjVocgwYnp_bJNGp5Aup_MpWWg81lvEnQG9uc-w=" alt="Bikaner" />
+        <div class="dest">
+          <img src="https://c1.staticflickr.com/3/2858/11577240763_ad1fde0b06_h.jpg" alt="Bikaner" />
           <div class="card-content">
             <h2>Bikaner - The Camel Country</h2>
             <p>
@@ -188,62 +182,8 @@ Located on the banks of Pushkar Lake, Pap Mochani Temple is dedicated to Goddess
             </p>
           </div>
         </div>
-        <div class="card">
-          <img src="chittorgarh.jpg" alt="Chittorgarh" />
-          <div class="card-content">
-            <h2>Chittorgarh - The Fort City</h2>
-            <p>
-              <h4>1.Chittorgarh Fort:</h4><br> This is one of the largest forts in India and a UNESCO World Heritage Site. It stands atop a hill and encompasses numerous palaces, temples, towers, and reservoirs. The fort has a rich history and is known for its resilience against invasions.
-
-             <h4>2. Vijay Stambh (Victory Tower):</h4><br> Built by Maharana Kumbha in the 15th century, the Vijay Stambh is a towering structure within the Chittorgarh Fort complex. It was erected to commemorate the victory over the armies of Malwa and Gujarat.
-              
-              <h4>3.Kirti Stambh (Tower of Fame):</h4><br> This is another impressive tower located within the Chittorgarh Fort. It was built by a Jain merchant in the 12th century and is adorned with intricate carvings depicting Jain deities and themes.
-              
-              <h4>4.Rana Kumbha Palace:</h4><br> Named after Maharana Kumbha, this palace is one of the oldest structures within the fort complex. It showcases Rajput architecture and offers panoramic views of the surrounding area.
-              
-              <h4>5.Padmini Palace:</h4><br> This palace is associated with the legendary queen Padmini, known for her beauty and valor. The palace overlooks a scenic water body and is surrounded by lush gardens.
-              
-              <h4>6.Meera Temple:</h4><br> Dedicated to the mystical poet-saint Meera Bai, this temple is located within the Chittorgarh Fort complex. It is a popular pilgrimage site for devotees of Meera Bai.
-              
-              <h4>7.Kalika Mata Temple:</h4><br> Situated near the fort, this temple is dedicated to Goddess Kalika, a form of Goddess Durga. It is believed to be one of the oldest temples in Chittorgarh.
-              
-              <h4>8.Fateh Prakash Palace:</h4><br> This palace, also known as the Government Museum, houses a rich collection of artifacts, sculptures, weapons, and inscriptions dating back to the Rajput era.
-              
-              <h4>9.Gaumukh Reservoir:</h4><br> This sacred water tank is located at the base of the Chittorgarh Fort. It is fed by a natural spring and is considered holy by pilgrims who visit the fort.
-              
-              <h4>10.Jaimal and Patta Palaces:</h4><br> These palaces are located within the fort complex and are named after two brave Rajput warriors, Jaimal Rathore and Patta Sisodia, who fought valiantly during the siege of Chittorgarh.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="bundi.jpg" alt="Bundi" />
-          <div class="card-content">
-            <h2>Bundi - The Blue City</h2>
-            <p>
-              <h4>Location:</h4><br> Bundi is a city located in the Hadoti region of Rajasthan, India. It lies about 210 kilometers south of Jaipur, the capital city of Rajasthan.
-
-<h4>1.Historical Significance:</h4><br> Bundi has a rich history dating back to the 12th century. It was founded by Rao Deva Hada, a Rajput chief of the Hada clan.
-
-<h4>2.Architectural Heritage:</h4><br> Bundi is famous for its magnificent forts, palaces, and stepwell reservoirs (baoris). The most prominent among them is the Bundi Palace, which offers stunning views of the city and is adorned with beautiful murals.
-
-<h4>3.Taragarh Fort:</h4><br> This imposing fort is situated atop a steep hill and is one of the oldest and largest forts in Rajasthan. It was built in the 14th century and offers panoramic views of the surrounding landscape.
-
-<h4>4.Raniji ki Baori:</h4><br> This is a stepwell built in the 17th century by Rani Nathavati Ji, the queen of Rao Raja Anirudh Singh of Bundi. It is known for its intricate carvings and architectural grandeur.
-
-<h4>5.Chitrashala:</h4><br> Also known as the "Palace of Paintings", Chitrashala is a gallery within the Bundi Palace that houses exquisite frescoes depicting scenes from Indian mythology, royal processions, and court life.
-
-<h4>6.Nawal Sagar Lake:</h4><br> This artificial lake is a prominent landmark in Bundi and is surrounded by numerous temples, palaces, and stepwells. The reflection of the surrounding structures in the tranquil waters of the lake creates a picturesque sight.
-
-<h4>7.Stepwells:</h4><br> Bundi is renowned for its numerous stepwells, locally known as "baoris" or "bawdis". These stepwells were not only sources of water but also served as meeting points and places for social gatherings.
-
-            </h4>Festivals:</h4><br> Bundi is known for its vibrant festivals, including the Bundi Utsav, which is a three-day cultural extravaganza held annually to showcase the region's rich cultural heritage through music, dance, and traditional arts.
-
-<h4>8.Accessibility:</h4><br> Bundi is well-connected by road and rail. The nearest airport is in Jaipur, from where one can easily reach Bundi by road or rail.
-            </p>
-          </div>
-        </div>
-        <div class="card">
-          <img src="ajmer.jpg" alt="Ajmer" />
+        <div class="dest">
+          <img src="https://th.bing.com/th/id/OIP.qhv321Q183WtXBZbWCebkgHaEK?rs=1&pid=ImgDetMain" alt="Ajmer" />
           <div class="card-content">
             <h2>Ajmer - The Sufi City</h2>
             <p>
@@ -283,7 +223,248 @@ Located on the banks of Pushkar Lake, Pap Mochani Temple is dedicated to Goddess
         </div>
       </div>
     </div>
+    <!-- Festivals -->
+    <h1>Rajasthan: Festivals of Wonder!</h1>
+    <section id="festivals">
+      <div class="festival-card">
+        <img class="festival-image" src="https://www.tripsavvy.com/thmb/xDa0h8uTjPY9dF1hgWozTswlxRM=/2121x1414/filters:no_upscale():max_bytes(150000):strip_icc()/GettyImages-458241585-0f022a1c39c7409a8e05803c189becd7.jpg" alt="Festival Image 1">
+        <div class="festival-details">
+          <h3>Pushkar Camel Fair</h3>
+          <p><strong>Location:</strong>Pushkar</p>
+          <p><strong>Time:</strong>November</p>
+          <p>This vibrant fair is renowned for its camel trading activities, cultural performances, camel races, and traditional competitions. It's a unique blend of spirituality, culture, and commerce.</p>
+        </div>
+      </div>
+      <div class="festival-card">
+        <img class="festival-image" src="https://th.bing.com/th/id/OIP.0QTwpzj6Mu1RHZfznJnkrAHaEK?rs=1&pid=ImgDetMain" alt="Festival Image 2">
+        <div class="festival-details">
+          <h3>Desert Festival</h3>
+          <p><strong>Location:</strong> Jaisalmer</p>
+          <p><strong>Time:</strong> February</p>
+          <p> Celebrating the culture and heritage of Rajasthan's desert regions, this festival features folk music and dance performances, camel races, turban tying competitions, and showcases local craftsmanship.</p>
+        </div>
+      </div>
+      <div class="festival-card">
+        <img class="festival-image" src="https://magikindia.com/wp-content/uploads/2020/03/gangaur-udaipur-1024x683.jpg" alt="Festival Image 1">
+        <div class="festival-details">
+          <h3>Gangaur Festival</h3>
+          <p><strong>Location:Rajasthan</strong></p>
+          <p><strong>Time:</strong>March-April</p>
+          <p>Dedicated to the goddess Gauri, consort of Lord Shiva, this festival is celebrated by women with colorful processions, song, dance, and prayers. It signifies marital happiness </p>
+        </div>
+      </div>
+      <div class="festival-card">
+        <img class="festival-image" src="https://images.firstpost.com/wp-content/uploads/2015/10/03_Marwar-Festival-2015.jpg" alt="Festival Image 1">
+        <div class="festival-details">
+          <h3>Marwar Festival</h3>
+          <p><strong>Location:</strong>Jodhpur</p>
+          <p><strong>Time:</strong>October</p>
+          <p>Celebrating the music and dance of the Marwar region, this festival features traditional performances, camel polo matches, and cultural events. </p>
+        </div>
+      </div>
+      <div class="festival-card">
+        <img class="festival-image" src="https://www.travels2rajasthan.com/uploads/74623_Reuters-Mehendi.jpg" alt="Festival Image 1">
+        <div class="festival-details">
+          <h3>Teej Festival</h3>
+          <p><strong>Location:</strong>Jaipur</p>
+          <p><strong>Time:</strong>August</p>
+          <p>This festival honors the Goddess Parvati and celebrates marital fidelity and happiness. Married women fast for the well-being of their husbands and families, and there are colorful processions, dances, and rituals.</p>
+        </div>
+      </div>
+      <div class="festival-card">
+        <img class="festival-image" src="https://localeventstoday.com/localet/wp-content/uploads/2021/05/4.jpg" alt="Festival Image 1">
+        <div class="festival-details">
+          <h3>Mewar Festival</h3>
+          <p><strong>Location:</strong>Udaipur</p>
+          <p><strong>Time:</strong>March-April</p>
+          <p>Celebrated to welcome the arrival of spring, this festival involves cultural performances, processions, and rituals, showcasing the rich heritage of the Mewar region.</p>    </div>
+      </div>
+    </section>
+<!-- gallery -->
+<h1>Rajasthan in Frames: Spectacular Sights!</h1>
+     <div class="gallery">
+  <div class="gallery-item">
+    <img src="https://th.bing.com/th/id/OIP.t74OKwZkB8w3gIB9_uJbLgHaEH?rs=1&pid=ImgDetMain" alt="Image 1" data-src="https://www.google.com/maps/embed?pb=!4v1710927911249!6m8!1m7!1sSoKbvmzhSg_WWtG87LIoPA!2m2!1d26.92401081540318!2d75.82713477322092!3f276.30255!4f0!5f0.7820865974627469" >
+    <div class="caption">Hawa Mahal</div>
+  </div>
+  <div class="gallery-item">
+    <img src="https://astrotalk.com/astrology-blog/wp-content/uploads/2019/11/dargah-2.jpg" alt="Image 2" data-src="https://www.google.com/maps/embed?pb=!4v1711177997280!6m8!1m7!1sVrshGMXxNEAAAAQJOEOjJw!2m2!1d26.4562046452109!2d74.62797886234671!3f20!4f0!5f0.7820865974627469 ">
+    <div class="caption">Ajmer Sharif Dargah</div>
+  </div>
+  <div class="gallery-item">
+      <img src="https://th.bing.com/th/id/OIP.Hsb3HRj_2XS0v5fqr7f2zAHaEy?rs=1&pid=ImgDetMain" alt="Image 3" data-src="https://www.google.com/maps/embed?pb=!4v1711178490608!6m8!1m7!1spBo9P3AZmlIGeqnLo8iJIg!2m2!1d24.89172875123527!2d74.64391576995723!3f77.48500940724371!4f8.892733777474689!5f0.7820865974627469" data-name="Sss">
+      <div class="caption">Rana Kumbha Palace</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://th.bing.com/th/id/R.99480e70e5891d6256ec3d060abfd126?rik=7DT7%2bu%2fO0SKXYw&riu=http%3a%2f%2fupload.wikimedia.org%2fwikipedia%2fcommons%2f3%2f39%2fAmber_Fort%2c_Jaipur%2c_Rajasthan.JPG&ehk=VsEyAwdL1Qaz6GotlcXSNMp2eozIAK02UE5FgIIlCHQ%3d&risl=1&pid=ImgRaw&r=0" alt="Image 4" data-src="https://www.google.com/maps/embed?pb=!4v1711178781242!6m8!1m7!1sPvA6ZWPoeWwsZdZKnBQ61w!2m2!1d26.98608522963903!2d75.85141617825543!3f272.69957786622996!4f-2.8157625299917015!5f0.7820865974627469" >
+      <div class="caption">Amber Fort</div>
+    </div>
+    <div class="gallery-item">
+      <img src="https://th.bing.com/th/id/OIP.JJK4BDDHBFgMtUFyFXP0igHaE8?rs=1&pid=ImgDetMain" alt="Image 4" data-src="https://www.google.com/maps/embed?pb=!4v1711179389532!6m8!1m7!1sCAoSLEFGMVFpcE9TV2g0WEtLSVBvWUlYVTdIWXZ2eGMxRVB6OHZtME9ZOHpnUFJK!2m2!1d24.5800432!2d73.6822364!3f61.96474234844784!4f-32.008948221884566!5f0.7820865974627469" data-name="Sss">
+      <div class="caption">Bagore ki Haveli</div>
+    </div>
+     <div class="gallery-item">
+      <img src="https://www.tourmyindia.com/images/desert-culture-center2.jpg" alt="Image 4" data-src="https://www.google.com/maps/embed?pb=!4v1711297048882!6m8!1m7!1sYAo6WG3M4fgy9pI8HRvmJg!2m2!1d26.91051807579244!2d70.91928206586587!3f309.05423439015624!4f11.206124568292665!5f1.4383702251752486" >
+      <div class="caption">Desert Cultural Centre</div>
+    <!-- <div class="gallery-item">
+      <img src="" alt="Image 4" data-src="" >
+      <div class="caption"></div>
+    </div> -->
+  <!-- Add more gallery items as needed -->
+</div>
 
+<div id="map-container"></div>
+
+<!-- Hotels -->
+<div class="container">
+  <h2>Famous Hotels</h2>
+  <div class="palaces-list">
+    <div class="palace" data-target="taj-lake-palace"><h4></h4>
+      <a href="https://www.tajhotels.com/en-in/taj/taj-lake-palace-udaipur/">
+        <img src="https://amusementlogic.ru/wp-content/uploads/2022/11/HOTELES-MUNDO-TAJ-LAKE-PALACE-111.jpg">
+      </a>
+      <div class="caption">Taj Lake Palace, Udaipur</div>
+    </div>
+    <div class="palace" data-target="umaid-bhawan-palace"><h4></h4>
+      <a href="https://www.ummedhotels.com/">
+        <img src="https://www.kayak.co.in/rimg/himg/e1/31/f8/leonardo-1124409-Baradari_Dining_O-762078.jpg?width=1366&height=768&crop=true">
+      </a>
+      <div class="caption">Umaid Bhawan Palace, Jodhpur</div>
+    </div>
+    <div class="palace" data-target="rambagh-palace"><h4> </h4>
+      <a href="https://www.tajhotels.com/en-in/taj/rambagh-palace-jaipur/">
+        <img src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/202305/taj_hotels-cq5dam.web_.756.756-sixteen_nine.jpeg?VersionId=qUqCAQOi5SkB1meNnLf4hdsrtRPLnNvA&size=690:388">
+      </a>
+      <div class="caption">Rambagh Palace, Jaipur</div>
+    </div>
+    <div class="palace" data-target="oberoi-udaivilas"><h4></h4>
+      <a href="https://www.oberoihotels.com/hotels-in-udaipur-udaivilas-resort/special-offers/early-advantage-rate/?utm_source=google&utm_content=Early_Advantage_Rate_01-11-2023&utm_medium=cpc&utm_campaign=oberoi_udaipur_search_conversion_ia&gad_source=1&gclid=Cj0KCQjwk6SwBhDPARIsAJ59GwfivkSpeLZb7GXmGFM6EjJdfJ3gled3bCLwDxRCI0Daq-NVGIRSsBwaAqgoEALw_wcB">
+        <img src="https://www.oberoihotels.com/-/media/oberoi-hotels/website-images/the-oberoi-udaivilas-udaipur/dining/overview/restaurant-1.jpg?w=836&hash=ac9fe9d3c2f85ad6d4063a98b78d4dd8">
+      </a>
+      <div class="caption">The Oberoi Udaivilas, Udaipur</div>
+    </div>
+    <div class="palace" data-target="samode-palace"><h4></h4>
+      <a href="https://www.samode.com/samodepalace/">
+        <img src="https://www.weddingsbyneerajkamra.com/uploads/blog/Document/how-much-does-a-destination-wedding-at-samode-palace-cost/wedding_23.jpg">
+      </a>
+      <div class="caption">Samode Palace, Jaipur</div>
+    </div>
+    <div class="palace" data-target="neemrana-fort-palace"><h4></h4>
+      <a href="https://www.neemranahotels.com/fort-palace-neemrana/">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqexT7dQMwlDWLDKC-SIU-huw6l-qviliodB7MyvfQqw&s">
+      </a>
+      <div class="caption">Neemrana Fort Palace, Alwar</div>
+    </div>
+    <div class="palace" data-target="sujan-rajmahal-palace"><h4></h4>
+      <a href="https://thesujanlife.com/raj-mahal">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZK0XW9xU24h4Q57o6Fr3uxZ3dmMakr_vCR8llKmjFiA&s">
+      </a>
+      <div class="caption">Sujan Rajmahal Palace, Jaipur</div>
+    </div>
+    <!-- <div class="palace" data-target="leela-palace-udaipur">
+      <a href="https://www.theleela.com/the-leela-palace-udaipur/special-offers/pay-2-stay-3?utm_source=google&utm_medium=cpc&utm_campaign=IA_Udaipur_Brand_Search_Neev_India&gad_source=1&gclid=Cj0KCQjwk6SwBhDPARIsAJ59GwdtM9l8dO-pg9Rl-6lEv_pLZ2kueV5wtLbU5iBIaq9IPYK5V3AlxfEaAkFdEALwIPYK5V3AlxfEaAkFdEALw_wcB">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQd-j1snfDkJ1W06YZgaOY8qhpL5HLqCbip_vgn3sgWWw&s">
+      </a>
+      <div class="caption">The Leela Palace, Udaipur</div>
+    </div> -->
+      
+</div>
+
+
+<h2>Famous Markets</h2>
+<div class="container">
+  
+ 
+    <div class="palace" data-target="Johari Bazar, Jaipur">
+      <div class="palace-front">
+      <h4>Johari Bazar, Jaipur</h4>
+     <img src="https://imgs.search.brave.com/DNcOE66SMF0Td7_4Nvn4pfUemg7HoXa9N2JQ-TSJIeA/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmd1/aW0uY28udWsvaW1n/L21lZGlhL2Y2YjA5/NzZiYWM3ZDBlN2Zj/ODQ1MGQyYTBkYjRm/MDllMDhkMzhhNjgv/MF8wXzYwMDBfNDAw/MC9tYXN0ZXIvNjAw/MC5qcGc_d2lkdGg9/NDQ1JmRwcj0xJnM9/bm9uZQ" alt="Johari Bazar, Jaipur">
+      </div>
+      <div class="palace-back">
+      <p>Johari Bazaar, Jaipur: Located in the heart of the Pink City, Johari Bazaar is renowned for its exquisite collection of jewelry, including precious gemstones, traditional Kundan, Meenakari, and Thewa jewelry. It's also a great place to shop for textiles, sarees, lehengas, and other traditional Rajasthani attire.</p>
+      </div>
+  </div>
+    <div class="palace" data-target="Bapu Bazaar, Jaipur">
+      <div class="palace-front">
+      <h4>Bapu Bazaar, Jaipur</h4>
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlusb-vF8exFCxfv3IAfCsZ4oB2yOz5pyltS9ExEDQBA&s" alt="Bapu Bazaar, Jaipur">
+      </div>
+        <div class="palace-back">
+          <p>Bapu Bazaar, Jaipur: This bustling market is famous for its colorful Rajasthani fabrics, including Bandhani and Leheriya sarees, as well as block-printed textiles. Visitors can also find a wide variety of handicrafts, including pottery, leather goods, and embroidered fabrics.</p>
+        </div>
+    </div>
+    <div class="palace" data-target="Clock Tower Market (Ghanta Ghar), Jodhpur">
+      <div class="palace-front">
+      <h4>Clock Tower Market (Ghanta Ghar), Jodhpur </h4>
+       
+      <img src="https://www.tourmyindia.com/images/clock-tower3.jpg" alt="Clock Tower Market (Ghanta Ghar), Jodhpur">
+  </div>   
+      <div class="palace-back">
+          <p>Clock Tower Market (Ghanta Ghar), Jodhpur: Surrounding the iconic Clock Tower, this market is a shopper's paradise with its wide array of textiles, spices, handicrafts, and traditional Rajasthani artifacts. It's a great place to soak in the local culture while shopping for souvenirs</p>
+        </div>
+    </div>
+    <div class="palace" data-target="Sadar Bazaar, Jaisalmer">
+      <div class="palace-front">
+      <h4>Sadar Bazaar, Jaisalmer</h4>
+      
+      <img src="https://imgs.search.brave.com/_S-pFS9SDF75pNLT6oFv0HKsliuQcUsIStbBSAG2GAA/rs:fit:860:0:0/g:ce/aHR0cHM6Ly93d3cu/cmFqYXN0aGFudG91/cnBsYW5uZXIuY29t/L2ltYWdlcy9qYWlz/YWxtZXJCaGF0aWEt/QmF6YWFyLmpwZw" alt="Sadar Bazaar, Jaisalmer">
+      </div>  
+      <div class="palace-back">
+          <p>Sadar Bazaar, Jaisalmer: Located near the Jaisalmer Fort, Sadar Bazaar is famous for its Rajasthani handicrafts, including embroidered fabrics, leather goods, camel leather products, and traditional Rajasthani puppets. The market also offers a variety of colorful textiles, rugs, and carpets.</p>
+      </div>
+    </div>
+    <div class="palace" data-target="Tripolia Bazaar, Jaipur">
+      <div class="palace-front">
+      <h4>ripolia Bazaar, Jaipur</h4>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR5RgfnMU6wC2OB-5wV6orGJnRrduz9sOhscYrlYlwYpA&s" alt="ripolia Bazaar, Jaipur">
+        </div>
+        <div class="palace-back">
+          <p>Sadar Bazaar, Jaisalmer: Located near the Jaisalmer Fort, Sadar Bazaar is famous for its Rajasthani handicrafts, including embroidered fabrics, leather goods, camel leather products, and traditional Rajasthani puppets. The market also offers a variety of colorful textiles, rugs, and carpets.</p>
+        </div>
+    </div>
+    <div class="palace" data-target="Mochi Bazaar, Jodhpur">
+      <div class="palace-front">
+      <h4>Mochi Bazaar, Jodhpur</h4>
+      <img src="https://www.rajasthantourplanner.com/images/Mochi-Bazar-Jodhpur.jpg" alt="Mochi Bazaar, Jodhpur">
+      </div>
+        <div class="palace-back">
+          <p>Mochi Bazaar, Jodhpur: Famous for its leather products, especially Jodhpuri jootis (traditional footwear), Mochi Bazaar is a paradise for shoe lovers. Visitors can explore a wide variety of intricately designed footwear crafted by skilled artisans.</p>
+      </div>
+    </div>
+    <div class="palace" data-target="Gangaur Ghat Market, Udaipur">
+      <div class="palace-front">
+      <h4>Gangaur Ghat Market, Udaipur</h4>
+       <img src="https://www.holidify.com/images/cmsuploads/compressed/Webp.net-compress-image-3-3_20190407155501.jpg" alt="Gangaur Ghat Market, Udaipur">
+        </div>
+        <div class="palace-back">
+          <p>Gangaur Ghat Market, Udaipur: Situated near the picturesque Lake Pichola, Gangaur Ghat Market is known for its stunning collection of traditional Rajasthani artwork, including miniature paintings, pottery, and silver jewelry. Visitors can also enjoy panoramic views of the lake while exploring the market.</p>
+      </div>
+    </div>
+</div>
+
+
+<h1>Medical-facilities</h1>
+ <section class="medical-facilities">
+  <h2>Hospitals and Clinics</h2>
+  <ul>
+    <li>
+      <h3><a href="https://rajasthanhospital.in/">Jaipur Hospital</a></h3>
+      <p>Opp. Jaipuria Hospital, Milap Nagar, JLN Marg, Jaipur	
+      </p>
+    </li>
+    <li>
+      <h3><a href="https://www.gbhamericanhospital.com/">Udaipur Hospital</a></h3>
+      <p>101, Bhatt ji ki bari Udaipur</p>
+    </li>
+    <li>
+      <h3><a href="https://www.myupchar.com/en/hospitals/kota/sudha-hospital-medical-reseach-centre-pvt-ltd-526">Udaipur Hospital</a></h3>
+      <p>Talwandi road ,kota</p>
+    </li>
+  </ul>
+</section>
+
+
+    <!-- Footer -->
     <footer>
       <div class="tble" id="contact">
         <div>
@@ -324,6 +505,6 @@ Located on the banks of Pushkar Lake, Pap Mochani Temple is dedicated to Goddess
       <p>&copy; 2024 Rajasthan Tourism. All rights reserved.</p>
     </footer>
 
-    <script src="rajasthan.js"></script>
+    <script src="../js/rajasthan.js" ></script>
   </body>
 </html>
