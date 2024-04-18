@@ -32,13 +32,13 @@ header {
   }
   @keyframes example {
     0% {
-      background-image: url('../images/animation1.jpeg'); 
+      background-image: url('animation1.jpeg'); 
     }
     50% {
-      background-image: url('../images/animation4.jpg'); 
+      background-image: url('animation4.jpg'); 
     }
     100% {
-      background-image: url('../images/animation5.jpg'); 
+      background-image: url('animation5.jpg'); 
     }
   }
   #para{
