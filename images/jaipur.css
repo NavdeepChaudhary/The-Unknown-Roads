@@ -1,0 +1,320 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: beige;
+}
+nav {
+  background-color: #b4b3b2;
+  padding: 10px;
+  text-align: center;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #470707;
+  text-decoration: underline;
+  background-color: blue;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transition: all 0.3s ease;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+h1 {
+  text-align: center;
+}
+.attractions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.attraction {
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease;
+  flex: 1 1 calc(33.33% - 40px); /* Three attractions per row */
+  max-width: calc(33.33% - 40px);
+}
+
+.attraction img {
+  width: 100%;
+  vertical-align: middle;
+  transition: transform 0.3s ease;
+}
+
+.attraction .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  padding: 20px;
+  text-align: center;
+}
+
+.attraction:hover {
+  transform: scale(1.1);
+}
+
+.attraction:hover img {
+  transform: scale(1.1);
+}
+
+.attraction:hover .overlay {
+  opacity: 1;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three images in a row */
+  grid-gap: 10px;
+  grid-template-rows: auto auto; /* Two rows, with automatic height */
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery-item img {
+  max-width: 100%; /* Ensure images don't exceed their container */
+  max-height: 100%; /* Ensure images don't exceed their container */
+  transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  filter: blur(5px);
+  transform: scale(1.05);
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 8px 0; /* Adjust padding as needed */
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .caption {
+  opacity: 1;
+}
+
+#map-container iframe {
+  width: 100%; /* Adjust the width of the map as needed */
+  border: 0;
+  height: 80%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.palaces-list {
+  perspective: 800px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+}
+
+.palace {
+  position: relative;
+  width: 300px;
+  height: 400px;
+  margin: 10px;
+  transform-style: preserve-3d;
+  transition: all 0.3s ease-in-out;
+}
+
+.palace:hover {
+  transform: translateY(-10px) rotateY(2deg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.palace::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.4)
+  );
+  border-radius: 10px;
+  z-index: -1;
+  transform: translateZ(-5px);
+}
+.palace:hover .palace-caption {
+  transform: translateY(0);
+}
+.palace img {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.caption {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px;
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 0 0 10px 10px;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+@media (max-width: 768px) {
+  .palace {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .palace {
+    width: 100%;
+  }
+}
+.container img {
+  transition: transform 0.5s, opacity 0.5s;
+}
+.container img:hover {
+  transform: scale(1.1) translateZ(50px);
+}
+h2 {
+  text-align: center;
+}
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.market {
+  width: 300px;
+  height: 400px;
+  margin: 50px;
+  perspective: 1000px;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.market:hover {
+  transform: rotateY(180deg);
+}
+
+.market-front,
+.market-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+.market-front {
+  background-color: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.market-front h4 {
+  margin-top: 0;
+}
+
+.market-front img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.market-back {
+  background-color: #fff;
+  padding: 20px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.market-back p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+.medical {
+  max-width: 800px;
+  margin: 20px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.hospital {
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hospital h2 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.hospital p {
+  margin: 0;
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.hospital p.location {
+  font-style: italic;
+}
+
+.hospital p.helpline {
+  font-weight: bold;
+}

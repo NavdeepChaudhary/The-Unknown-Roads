@@ -1,0 +1,37 @@
+
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.hospital {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hospital h2 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.hospital p {
+    margin: 0;
+    margin-bottom: 5px;
+    color: #666;
+}
+
+.hospital p.location {
+    font-style: italic;
+}
+
+.hospital p.helpline {
+    font-weight: bold;
+}
