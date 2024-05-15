@@ -1,14 +1,35 @@
 <html>
+
+<body class="dark-mode">
+    <style>body {
+        background-color: #f0f0f0; /* Light theme background color */
+        color: #333; /* Light theme text color */
+    }
+    
+    body.dark-mode {
+        background-color: #333; /* Dark theme background color */
+        color: #f0f0f0; /* Dark theme text color */
+    }</style>
+</body>
+<button id="dark-mode-button">Dark Mode</button>
+<script>
+const darkModeButton = document.getElementById('dark-mode-button');
+darkModeButton.addEventListener('click', function() {
+    document.body.classList.toggle('dark-mode');
+});
+</script>
+</html>
+<html>
   <head>
     <title></title>
-    <link rel="stylesheet" type="text/css" href="../css/startpage.css" />
+    <link rel="stylesheet" type="text/css" href="startpage.css" />
     <body
       background="https://th.bing.com/th/id/R.81eb27ccd2d2428a65c6412e02b4acf9?rik=IXXsziNGXvRafg&riu=http%3a%2f%2f2.bp.blogspot.com%2f-ArfIiu2qF7k%2fUTTeRWZmRqI%2fAAAAAAAAAX4%2fsPsodULNryk%2fs1600%2fA-37.jpg&ehk=xrlZE5YMg7bibgO%2bb6oVaoRuJi2FKeHqjj3PfoNXSqg%3d&risl=&pid=ImgRaw&r=0" />
   </head>
   <body>
     <header>
       <nav>
-        <div class="logo"><h1 style="font-size: 20px">MERA BHARAT</h1></div>
+        <div class="logo"><h1 style="font-size: 20px">maharo Rajasthan</h1></div>
         <div class="menu">
           <a href="#" >Home</a>
           <a href="#">gallery</a>
@@ -18,15 +39,15 @@
       </nav>
 
       <main>
-        <section>
-          <h3>Welcome To India</h3>
+        <section> 
+          <h3>Welcome To Rajasthan</h3>
           <h1>
             DO COME & VISIT <span class="change_content"> </span>
             <span style="margin-top: -10px"> | </span>
           </h1>
-          <p>"India once is not enough"</p> 
-          <a href="../html/homepage.html" class="btnone">Explore India With Us</a>
-           <a href="#" class="btntwo">signup here</a>
+          <p>"Rajasthan once is not enough"</p> 
+          <a href="homepage.html" class="btnone">Explore Rajasthan With Us</a>
+           <a href="login.html" class="btntwo">signup here</a>
         </section>
       </main>
     </header>
